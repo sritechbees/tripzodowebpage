@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: 'Sandeep Mathew',
     role: 'Finance ',
-    image: '/company/Sandeep Mathew.jpeg',
+    image: '/company/Sandeep Mathew1.jpeg',
   },
   {
     name: 'Mario Wilson ',
