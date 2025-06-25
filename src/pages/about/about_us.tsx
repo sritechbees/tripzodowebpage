@@ -58,6 +58,7 @@ export default function AboutUs() {
       img: "/company/our mission.jpg",
     },
   ];
+  
 
   return (
     <App_layout>
@@ -85,47 +86,55 @@ export default function AboutUs() {
 
         {/* Story / Vision / Mission */}
         <div className="py-16 px-6 max-w-6xl mx-auto space-y-24">
-          {sections.map((sec, idx) => (
-            <div
-              key={idx}
-              className={`flex flex-col md:flex-row items-center gap-10 ${
-                idx % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-              {/* Image + Circle Zoom */}
-              <div className="md:w-1/2 relative group">
-                <div className="overflow-hidden rounded-xl shadow-lg relative">
-                  <Image
-                    src={sec.img}
-                    alt={sec.title}
-                    width={600}
-                    height={400}
-                    className="rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 left-4 w-24 h-24 rounded-full overflow-hidden ring-4 ring-white shadow-lg">
-                    <Image
-                      src={sec.img}
-                      alt="Zoom Highlight"
-                      width={96}
-                      height={96}
-                      className="object-cover scale-110"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Text Content */}
-              <div className="md:w-1/2 space-y-4">
-                <h2 className="text-4xl font-semibold text-gray-800 tracking-tight">
-                  {sec.title}
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed border-l-4 pl-4 border-yellow-400">
-                  {sec.desc}
-                </p>
+      {sections.map((sec, idx) => (
+        <div
+          key={idx}
+          className={`flex flex-col md:flex-row items-center gap-10 ${
+            idx % 2 !== 0 ? "md:flex-row-reverse" : ""
+          }`}
+        >
+          {/* Image + Circle Zoom */}
+          <div
+            className="md:w-1/2 relative group"
+            data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos-delay="100"
+          >
+            <div className="overflow-hidden rounded-xl shadow-lg relative">
+              <Image
+                src={sec.img}
+                alt={sec.title}
+                width={600}
+                height={400}
+                className="rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute top-4 left-4 w-24 h-24 rounded-full overflow-hidden ring-4 ring-white shadow-lg">
+                <Image
+                  src={sec.img}
+                  alt="Zoom Highlight"
+                  width={96}
+                  height={96}
+                  className="object-cover scale-110"
+                />
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Text Content */}
+          <div
+            className="md:w-1/2 space-y-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h2 className="text-4xl font-semibold text-gray-800 tracking-tight">
+              {sec.title}
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed border-l-4 pl-4 border-yellow-400">
+              {sec.desc}
+            </p>
+          </div>
         </div>
+      ))}
+    </div>
 
           
                  

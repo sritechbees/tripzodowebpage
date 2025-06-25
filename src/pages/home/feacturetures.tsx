@@ -182,23 +182,34 @@ const FeaturesSection = () => {
 
 
       {/* Key Facilities */}
-      <section className="bg-white py-9 px-4 md:px-10">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800"><span className="text-[#fed42a]">Key</span> Facilities</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {facilities.map((facility, index) => (
-            <div
-              key={index}
-              className="bg-white border border-[#fed42a] shadow-md rounded-xl p-6 flex items-start space-x-4 hover:bg-gradient-to-r hover:from-yellow-100 hover:via-yellow-200 hover:to-yellow-300 hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <div className="text-[#fed42a] text-3xl">{facility.icon}</div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-1">{facility.title}</h3>
-                <p className="text-gray-600">{facility.description}</p>
-              </div>
-            </div>
-          ))}
+     <section className="bg-white py-12 px-4 md:px-10">
+  <h2
+    className="text-3xl font-bold text-center mb-12 text-gray-800"
+    data-aos="fade-up"
+  >
+    <span className="text-[#fed42a]">Key</span> Facilities
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    {facilities.map((facility, index) => (
+      <div
+        key={index}
+        className="bg-white border border-[#fed42a] shadow-lg rounded-2xl p-6 flex items-start space-x-4 hover:shadow-2xl hover:scale-[1.02] hover:bg-yellow-50 transition-all duration-300 ease-in-out"
+        data-aos="zoom-in"
+        data-aos-delay={index * 100}
+        data-aos-duration="600"
+      >
+        <div className="text-[#fed42a] text-4xl">{facility.icon}</div>
+        <div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            {facility.title}
+          </h3>
+          <p className="text-gray-600">{facility.description}</p>
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Marquee CSS */}
       <style jsx>{`

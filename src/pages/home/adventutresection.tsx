@@ -1,5 +1,7 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   FaCampground,
   FaBiking,
@@ -51,71 +53,87 @@ const topics = [
 const AdventureSection = () => {
   const [activeTopic, setActiveTopic] = useState(topics[0]);
 
+  useEffect(() => {
+    AOS.init({ once: true, duration: 800 });
+  }, []);
+
   return (
-    <div className="max-w-7xl mx-auto px-9">
-    <section className="bg-[#0d1d18] rounded-lg text-white py-8 mt-10 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-start gap-10">
-        {/* Left: List */}
-        <div className="flex-1 flex justify-center">
-          <div className="bg-white rounded-xl p-5 space-y-5 py-4 text-black w-full max-w-xs">
-            {topics.map((topic) => (
-              <div
-                key={topic.id}
-                onClick={() => setActiveTopic(topic)}
-                className={`flex items-center p-3 rounded-md cursor-pointer transition-all duration-200 ${
-                  activeTopic.id === topic.id
-                    ? "bg-[#fed42a] text-white"
-                    : "bg-gray-100 hover:bg-gray-200"
-                }`}
-              >
-                <span className="text-xl mr-3">{topic.icon}</span>
-                <span className="font-medium">{topic.title}</span>
+    <div className="max-w-7xl mx-auto px-6">
+      <section className="bg-[#0d1d18] rounded-lg text-white py-10 mt-10 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-start gap-10">
+          {/* Left: List */}
+          <div
+            className="flex-1 flex justify-center"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div className="bg-white rounded-xl p-5 space-y-5 py-4 text-black w-full max-w-xs">
+              {topics.map((topic, index) => (
+                <div
+                  key={topic.id}
+                  onClick={() => setActiveTopic(topic)}
+                  className={`flex items-center p-3 rounded-md cursor-pointer transition-all duration-200 ${
+                    activeTopic.id === topic.id
+                      ? "bg-[#fed42a] text-white"
+                      : "bg-gray-100 hover:bg-gray-200"
+                  }`}
+                >
+                  <span className="text-xl mr-3">{topic.icon}</span>
+                  <span className="font-medium">{topic.title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Center: Content */}
+          <div
+            className="flex-1 flex flex-col justify-center space-y-6 max-w-md"
+            data-aos="fade-up"
+          >
+            <div className="text-gray-900 bg-[#fed42a] rounded-full w-20 h-20 text-4xl flex items-center justify-center shadow-lg">
+              {activeTopic.icon}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight text-[#fed42a]">
+              Discover real thrills & make{" "}
+              <span className="text-white">memories that last forever</span>
+            </h2>
+            <p className="text-gray-300">{activeTopic.description}</p>
+
+            {/* Stats */}
+            <div>
+              <div className="mb-2 flex justify-between text-sm text-gray-400">
+                <span>Satisfied Clients</span>
+                <span className="text-[#fed42a] font-bold">89%</span>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Center: Content */}
-        <div className="flex-1 flex flex-col justify-center space-y-6 max-w-md">
-         <div className="text-gray-900 bg-[#fed42a] rounded-full w-20 h-20 text-4xl flex items-center justify-center">
-  {activeTopic.icon}
-</div>
-  <h2 className="text-3xl md:text-4xl font-bold leading-tight text-[#fed42a]">
-            Discover real thrills & make <span className="text-white">memories that last forever</span>
-          </h2>
-          <p className="text-gray-300">{activeTopic.description}</p>
-
-          {/* Stats */}
-          <div>
-            <div className="mb-2 flex justify-between text-sm text-gray-400">
-              <span>Satisfied Clients</span>
-              <span className="text-[#fed42a] font-bold">89%</span>
-            </div>
-            <div className="w-full bg-gray-700 h-2 rounded">
-              <div className="bg-[#fed42a] h-2 w-[89%] rounded"></div>
-            </div>
-            <div className="mt-4 mb-2 flex justify-between text-sm text-gray-400">
-              <span>Success Rate</span>
-              <span className="text-[#fed42a] font-bold">86%</span>
-            </div>
-            <div className="w-full bg-gray-700 h-2 rounded">
-              <div className="bg-[#fed42a] h-2 w-[86%] rounded"></div>
+              <div className="w-full bg-gray-700 h-2 rounded">
+                <div className="bg-[#fed42a] h-2 w-[89%] rounded"></div>
+              </div>
+              <div className="mt-4 mb-2 flex justify-between text-sm text-gray-400">
+                <span>Success Rate</span>
+                <span className="text-[#fed42a] font-bold">86%</span>
+              </div>
+              <div className="w-full bg-gray-700 h-2 rounded">
+                <div className="bg-[#fed42a] h-2 w-[86%] rounded"></div>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right: Image */}
-        <div className="flex-1 flex justify-center">
-          <Image
-            src="/home/Adventure2.jpg"
-            alt="Adventure"
-            height={200}
-            width={200}
-            className="rounded-xl shadow-md w-full max-w-xs"
-          />
+          {/* Right: Image */}
+          <div
+            className="flex-1 flex justify-center"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <Image
+              src="/home/Adventure2.jpg"
+              alt="Adventure"
+              height={200}
+              width={200}
+              className="rounded-xl shadow-md w-full max-w-xs"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 };

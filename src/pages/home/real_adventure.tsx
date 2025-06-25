@@ -102,8 +102,8 @@ const RealAdventure = () => {
             {/* Hover Overlay */}
             <div className="absolute inset-0 px-4 py-6 border border-2 border-[#fed42a] scale-0 group-hover:scale-100 origin-top transition-transform duration-500 z-20 rounded-xl">
               <p className="text-white text-sm font-medium mb-1">{item.category}</p>
-              <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
-              <p className="text-gray-700 text-sm mt-2">{item.description}</p>
+              <h4 className="text-lg font-semibold text-[#fed42a]">{item.title}</h4>
+              <p className="text-white text-sm mt-2">{item.description}</p>
               <div className="absolute bottom-4 right-4 bg-[#fed42a] p-2 rounded-full">
                 <FaArrowUpRightFromSquare className="text-gray-900 text-sm" />
               </div>

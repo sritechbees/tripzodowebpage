@@ -96,22 +96,7 @@ const Contactall = () => {
         <title>Tripzodo | Contact</title>
       </Head>
       <div className="bg-white  text-gray-800">
-        {/* Hero Section */}
-        {/* <div
-          className="relative h-[60vh] bg-center bg-cover mt-16"
-          style={{ backgroundImage: "url('/contact/contact.jpg')" }}
-        >
-          <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="text-[#fed42a] text-4xl md:text-6xl font-extrabold drop-shadow-[0_5px_10px_rgba(255,255,255,0.5)]"
-            >
-              Contact
-            </motion.h1>
-          </div>
-        </div> */}
+       
 
         {/* Success/Error Messages */}
         {successMsg && (

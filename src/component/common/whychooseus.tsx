@@ -79,11 +79,11 @@ const WhyChooseUs = () => {
           <div className="flex justify-center items-center gap-10 text-base">
             <div className="flex items-center gap-2">
               <FaPhoneAlt className="text-[#fed42a]" />
-              <span>+91 9500093383</span>
+              <span>+91 9019412772</span>
             </div>
             <div className="flex items-center gap-2">
               <FaGlobe className="text-[#fed42a]" />
-              <span>www.tripzodo.com</span>
+              <span>travel@tripzodo.com</span>
             </div>
           </div>
         </div>
