@@ -17,7 +17,7 @@ const slides = [
     subtitle: "Capture every moment.",
   },
   {
-    src: "/home/hero3.jpg",
+    src: "/company/careers1.jpg",
     title: "Cultural Wonders",
     subtitle: "Experience the world’s heritage.",
   },
@@ -50,7 +50,7 @@ const HeroSection = () => {
       </Head>
 
     
-    <section className="relative w-full h-screen overflow-hidden bg-black text-white">
+    <section className="relative w-full h-screen overflow-hidden text-white">
     
       {/* Background Image */}
       <div
@@ -59,7 +59,7 @@ const HeroSection = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50 z-10" />
+      <div className="absolute inset-0 bg-gray-900 opacity-40 z-10" />
 
       {/* Navigation Buttons */}
       <button
