@@ -4,7 +4,7 @@ import {
   FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaPinterestP,
 } from "react-icons/fa";
 import Image from 'next/image';
-import Head from 'next/head';
+
 
 const Contactall = () => {
   const [formData, setFormData] = useState({

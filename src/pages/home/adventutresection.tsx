@@ -68,7 +68,7 @@ const AdventureSection = () => {
             data-aos-delay="200"
           >
             <div className="bg-white rounded-xl p-5 space-y-5 py-4 text-black w-full max-w-xs">
-              {topics.map((topic, index) => (
+              {topics.map((topic) => (
                 <div
                   key={topic.id}
                   onClick={() => setActiveTopic(topic)}
