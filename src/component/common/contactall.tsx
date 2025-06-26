@@ -92,9 +92,7 @@ const Contactall = () => {
   return (
     // <App_layout>
     <>
-      <Head>
-        <title>Tripzodo | Contact</title>
-      </Head>
+     
       <div className="bg-white  text-gray-800">
        
 
