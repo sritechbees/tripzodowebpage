@@ -22,7 +22,7 @@ const gallerySections = [
   {
     title: 'Romantic Getaways & Honeymoons',
     description: 'Perfect packages for couples seeking dreamy destinations and unforgettable moments.',
-    images: ['/packages/Romantic Getaways & Honeymoons1.jpg', '/packages/Romantic Getaways & Honeymoons2.jpg', '/packages/Romantic Getaways & Honeymoons3.jpg'],
+    images: ['/packages/Honeymoons1.jpg', '/packages/Honeymoons2.jpg', '/packages/Honeymoons3.jpg'],
   },
   {
     title: 'Exotic Wildlife & Nature Safaris',

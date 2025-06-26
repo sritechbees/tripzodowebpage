@@ -16,7 +16,7 @@ const seasons = [
   {
     title: "Summer Groups for 2025",
     cards: [
-      { title: "Thailand Summer Tour", image: "/packages/Thailand Summer Tour.jpg", location: "Thailand", duration: "5 Nights 6 Days" },
+      { title: "Thailand Summer Tour", image: "/packages/ThailandSummer_Tour.jpg", location: "Thailand", duration: "5 Nights 6 Days" },
       { title: "Bali Adventure", image: "/packages/Bali Adventure.jpg", location: "Bali", duration: "4 Nights 5 Days" },
       { title: "Japan Summer Tour", image: "/packages/Japan Summer Tour.jpg", location: "Japan", duration: "7 Nights 8 Days" },
       { title: "Maldives Escape", image: "/packages/Maldives Escape.jpg", location: "Maldives", duration: "3 Nights 4 Days" },
@@ -27,17 +27,17 @@ const seasons = [
     cards: [
       { title: "Kashmir Autumn Tour", image: "/packages/autumn1.jpg", location: "Kashmir", duration: "5 Nights 6 Days" },
       { title: "Canada Fall Escape", image: "/packages/Canada Fall Escape.jpg", location: "Canada", duration: "6 Nights 7 Days" },
-      { title: "Paris Autumn Trip", image: "/packages/Paris Autumn Trip.jpg", location: "Paris", duration: "4 Nights 5 Days" },
-      { title: "New York Colors", image: "/packages/New York Colors.jpg", location: "USA", duration: "5 Nights 6 Days" },
+      { title: "Paris Autumn Trip", image: "/packages/ParisAutumn_Trip.jpg", location: "Paris", duration: "4 Nights 5 Days" },
+      { title: "New York Colors", image: "/packages/NewYork_Colors.jpg", location: "USA", duration: "5 Nights 6 Days" },
     ],
   },
   {
     title: "Spring Groups for 2025",
     cards: [
       { title: "Japan Cherry Blossom", image: "/packages/Japan Cherry Blossom.jpg", location: "Japan", duration: "7 Nights 8 Days" },
-      { title: "Netherlands Tulip Tour", image: "/packages/Netherlands Tulip Tour.jpg", location: "Netherlands", duration: "5 Nights 6 Days" },
+      { title: "Netherlands Tulip Tour", image: "/packages/NetherlandsTulip_Tour.jpg", location: "Netherlands", duration: "5 Nights 6 Days" },
       { title: "Italy Spring Tour", image: "/packages/Italy Spring Tour.jpg", location: "Italy", duration: "6 Nights 7 Days" },
-      { title: "Seoul Bloom Trip", image: "/packages/Seoul Bloom Trip.jpg", location: "South Korea", duration: "5 Nights 6 Days" },
+      { title: "Seoul Bloom Trip", image: "/packages/SeoulBloom_Trip.jpg", location: "South Korea", duration: "5 Nights 6 Days" },
     ],
   },
 ];
