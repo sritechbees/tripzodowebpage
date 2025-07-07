@@ -5,7 +5,6 @@ import App_layout from "@/component/layout/app-layout";
 import GroupTourCards from "./grouptour_cards";
 import Testimonials from "./testimonial";
 import Contactall from "@/component/common/contactall";
-import GetUpdates from "@/component/common/getupdates";
 
 const GroupTourHeroSection = () => {
   return (

@@ -94,7 +94,7 @@ const Footer = () => {
         >
           <h2 className="text-xl text-[#fed42a] font-bold mb-4">Tripzodo</h2>
           <p className="text-sm text-white mb-4">
-            " Turning your travel dreams into unforgettable journeys."
+            &quot; Turning your travel dreams into unforgettable journeys.&quot;
           </p>
           <div className="flex space-x-3">
             {[FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, idx) => (
