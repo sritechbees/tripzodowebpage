@@ -215,9 +215,10 @@ export default function AboutUs() {
            <div data-aos="fade-up" data-aos-delay="300">
           <Faq />
         </div>
-        <div className="" data-aos="fade-up" data-aos-delay="400">
+     
+          
           <Contactall />
-        </div>
+        
         <div data-aos="fade-up" data-aos-delay="500">
         
         </div>
