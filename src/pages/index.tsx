@@ -4,7 +4,6 @@ import Header from "@/component/layout/header";
 import Footer from "@/component/layout/footer";
 import TrendingTours from "./home/trending_tours";
 import Contactall from "@/component/common/contactall";
-import GetUpdates from "@/component/common/getupdates";
 import PopularPackages from "./home/popularpackages";
 import WelcomeHolidays from "@/component/common/welcome_holidays";
 import HeroSection from "@/component/home/herosection";
@@ -42,7 +41,7 @@ export default function Home() {
 
    <TrendingTours/>
    <Contactall/>
-   <GetUpdates/>
+  
 
    <Footer/>
     </div>

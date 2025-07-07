@@ -28,7 +28,7 @@ function TravelIntro() {
         {/* Left Content */}
         <div data-aos="fade-up">
           <span className="inline-block bg-yellow-100 text-gray-900 text-lg font-medium px-4 py-1 rounded-full mb-4">
-            Welcome to Gowilds
+            Welcome to Tripzodo
           </span>
           <h1 className="text-3xl font-bold text-[#fed42a] mb-4 leading-tight">
             We are the most fun <span className="text-gray-900">company about travel and adventure</span>

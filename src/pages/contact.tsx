@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import Image from 'next/image';
 import Head from 'next/head';
-import GetUpdates from '@/component/common/getupdates';
+
 
 const Booknow = () => {
   const [formData, setFormData] = useState({
@@ -261,7 +261,7 @@ const Booknow = () => {
           </div>
         </section>
       </div>
-      <GetUpdates />
+  
     </App_layout>
   );
 };
