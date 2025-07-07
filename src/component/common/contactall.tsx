@@ -84,7 +84,7 @@ const Contactall = () => {
     },
     {
       title: 'Hotline',
-      content: '+91 9500093383',
+      content: '+91 9019412772',
       image: '/contact/hotlinee.png',
     },
   ];
