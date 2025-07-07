@@ -138,6 +138,7 @@ const FeaturesSection = () => {
       <div className="overflow-hidden relative py-5 bg-white">
   <div className="marquee-track flex gap-6 w-max">
     {[...data, ...data].map((item, index) => (
+       <Link href="/book_now" key={index}>
       <div
         key={index}
         className="relative group rounded-xl overflow-hidden shadow-lg w-[350px] h-[270px] bg-white"
@@ -161,11 +162,11 @@ const FeaturesSection = () => {
               <FaStar />
               <FaStar />
             </div>
-            <Link href="/book_now">
+           
             <div className="flex text-gray-700 space-x-2 text-base">
               <FaCamera />
               <FaWhatsapp />
-            </div></Link>
+            </div>
             
           </div>
 
@@ -179,6 +180,7 @@ const FeaturesSection = () => {
           <p className="text-orange-600 text-sm font-bold mt-1">{item.price}</p>
         </div>
       </div>
+      </Link>
     ))}
   </div>
 </div>

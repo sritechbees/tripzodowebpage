@@ -8,37 +8,37 @@ import { FaArrowRight, FaArrowLeft, FaArrowUpRightFromSquare } from 'react-icons
 const adventures = [
   {
     title: 'Mountain climbing',
-    category: 'Wildlife',
+    category: 'Tripzodo',
     image: '/home/adventure1.jpg',
     description: 'Climb breathtaking peaks with guided experiences.',
   },
   {
     title: 'Tent camping services',
-    category: 'Wildlife',
+    category: 'Tripzodo',
     image: '/home/Tent camping services.jpg',
     description: 'Cozy tent setups under the stars.',
   },
   {
     title: 'Trailers and rv spots',
-    category: 'Wildlife',
+    category: 'Tripzodo',
     image: '/home/Trailers and rv spots.jpg',
     description: 'Comfortable RV spots surrounded by nature.',
   },
   {
     title: 'Adventure and climbing',
-    category: 'Wildlife',
+    category: 'Tripzodo',
     image: '/home/adventure_climbing.jpg',
     description: 'Challenge yourself with thrilling climbs.',
   },
   {
     title: 'Jungle Safari',
-    category: 'Wildlife',
+    category: 'Tripzodo',
     image: '/home/Jungle Safari.jpg',
     description: 'Explore wild landscapes and exotic animals.',
   },
   {
     title: 'River Rafting',
-    category: 'Wildlife',
+    category: 'Tripzodo',
     image: '/home/River Rafting.jpg',
     description: 'Ride the rapids with experienced guides.',
   },
