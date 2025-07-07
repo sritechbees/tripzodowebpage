@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useRef, useState } from 'react';
 import { FaArrowRight, FaArrowLeft, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
@@ -104,9 +105,11 @@ const RealAdventure = () => {
               <p className="text-white text-sm font-medium mb-1">{item.category}</p>
               <h4 className="text-lg font-semibold text-[#fed42a]">{item.title}</h4>
               <p className="text-white text-sm mt-2">{item.description}</p>
+              <Link href="/book_now">
               <div className="absolute bottom-4 right-4 bg-[#fed42a] p-2 rounded-full">
                 <FaArrowUpRightFromSquare className="text-gray-900 text-sm" />
               </div>
+              </Link>
             </div>
           </div>
         ))}

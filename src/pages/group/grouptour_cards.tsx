@@ -1,6 +1,7 @@
 import Blogtypes from "@/component/common/blogtypes";
 import CompanyGallery from "@/component/common/companygallery";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const seasons = [
@@ -78,6 +79,7 @@ const GroupTourCards = () => {
 
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {season.cards.map((card, index) => (
+               <Link href="/book_now" key={index}>
               <div
                 key={index}
                 className="border rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
@@ -96,6 +98,7 @@ const GroupTourCards = () => {
                   <p className="text-sm text-yellow-600 font-semibold mt-2">{card.duration}</p>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -118,6 +121,7 @@ const GroupTourCards = () => {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
     {travelPackages.map((pkg, idx) => (
+       <Link href="/book_now" key={idx}>
       <div
         key={idx}
         className="relative rounded-xl shadow-md overflow-hidden group cursor-pointer transition-all duration-500 hover:shadow-xl"
@@ -158,6 +162,7 @@ const GroupTourCards = () => {
           </div>
         </div>
       </div>
+      </Link>
     ))}
   </div>
 </div>
@@ -203,6 +208,7 @@ const GroupTourCards = () => {
                   desc: "A luxurious blend of tradition and futuristic skyline in golden sands.",
                 },
               ].map((card, index) => (
+                 <Link href="/book_now" key={index}>
                 <div
                   key={index}
                   className="relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-transform duration-500 hover:scale-105 group"
@@ -220,6 +226,7 @@ const GroupTourCards = () => {
                     <p className="text-lg text-white">{card.desc}</p>
                   </div>
                 </div>
+                </Link>
               ))}
             </div>
           </div>

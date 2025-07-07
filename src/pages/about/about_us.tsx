@@ -1,7 +1,6 @@
 import Contactall from "@/component/common/contactall";
 import Faq from "@/component/common/faq";
 import { motion } from 'framer-motion';
-import GetUpdates from "@/component/common/getupdates";
 import MeetOurTeam from "@/component/common/meetour_team";
 import WhyChooseUsAlt from "@/component/common/whychooseus";
 import App_layout from "@/component/layout/app-layout";
@@ -220,7 +219,7 @@ export default function AboutUs() {
           <Contactall />
         </div>
         <div data-aos="fade-up" data-aos-delay="500">
-          <GetUpdates />
+        
         </div>
       </div>
     </App_layout>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const tours = [
   {
@@ -109,9 +110,11 @@ const GroupTours = () => {
   />
   <h3 className="text-xl font-semibold text-[#fed42a] text-center">{tour.title}</h3>
   <p className="text-sm mt-1 text-gray-200 text-center px-4">{tour.description}</p>
+   <Link href="/book_now">
   <div className="mt-3">
     <FaArrowUpRightFromSquare className="text-lg" />
   </div>
+  </Link>
 </div>
 
           </div>

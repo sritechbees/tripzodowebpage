@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const packages = [
   {
@@ -59,6 +60,7 @@ const PopularPackages = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {packages.map((pkg, i) => (
+           <Link href="/book_now" key={pkg.title}>
           <div
             key={pkg.title}
             data-aos={aosAnimations[i % aosAnimations.length]}
@@ -85,6 +87,7 @@ const PopularPackages = () => {
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

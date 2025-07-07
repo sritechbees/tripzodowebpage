@@ -8,37 +8,37 @@ const testimonials = [
     name: 'Alice Johnson',
     role: 'Architect',
     message: 'This course transformed the way I visualize architecture!',
-    image: 'https://randomuser.me/api/portraits/women/1.jpg',
+    image: '/contact/ruban-profile.png',
   },
   {
     name: 'Brian Smith',
     role: 'Interior Designer',
     message: 'Very clear instructions and stunning output.',
-    image: 'https://randomuser.me/api/portraits/men/2.jpg',
+    image: '/contact/jai-prakash-profile.png',
   },
   {
     name: 'Carlos Mendes',
     role: '3D Artist',
     message: 'I loved the workflow and project-based approach.',
-    image: 'https://randomuser.me/api/portraits/men/3.jpg',
+    image: '/contact/nareshnew-profile.png',
   },
   {
     name: 'Diana Lee',
     role: 'Urban Planner',
     message: 'Best investment for learning visualization tools!',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+    image: '/contact/prasanth-profile.png',
   },
   {
     name: 'Ethan Brown',
     role: 'Student',
     message: 'Easy to follow and beautifully explained concepts.',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+    image: '/contact/aswinn.png',
   },
   {
     name: 'Farah Khan',
     role: 'Architectural Intern',
     message: 'Practical, professional, and perfect for my career growth.',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+    image: '/contact/aswath-profile.png',
   },
 ];
 

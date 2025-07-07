@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { FaUmbrellaBeach, FaMountain, FaCity, FaCampground, FaShip, FaHiking } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const Trips = () => {
   useEffect(() => {
@@ -55,6 +56,7 @@ const Trips = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {tripData.map((trip, index) => (
+           <Link href="/book_now" key={index}>
           <div
             key={index}
             data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
@@ -75,6 +77,7 @@ const Trips = () => {
               <p className="text-sm">{trip.description}</p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

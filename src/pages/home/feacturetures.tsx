@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   FaStar,
@@ -160,10 +161,12 @@ const FeaturesSection = () => {
               <FaStar />
               <FaStar />
             </div>
+            <Link href="/book_now">
             <div className="flex text-gray-700 space-x-2 text-base">
               <FaCamera />
               <FaWhatsapp />
-            </div>
+            </div></Link>
+            
           </div>
 
           <h3 className="text-gray-800 font-semibold text-sm truncate">{item.title}</h3>

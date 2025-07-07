@@ -40,7 +40,6 @@ const GroupTourHeroSection = () => {
      <GroupTourCards/>
      <Testimonials/>
      <Contactall/>
-     <GetUpdates/>
     </App_layout>
   );
 };
