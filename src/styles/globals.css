@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* =========================
+   Root Theme Colors & Fonts
+========================= */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,10 +22,18 @@
   }
 }
 
+/* =========================
+   Base Styles
+========================= */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-
-
-/* Animated background gradient for footer */
+/* =========================
+   Footer Animated Gradient
+========================= */
 .footer-animated-bg {
   background: linear-gradient(270deg, #111111, #1a1a1a, #2c2c2c, #111111);
   background-size: 800% 800%;
@@ -30,18 +41,44 @@
 }
 
 @keyframes bgAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================
+   Typewriter Animation
+========================= */
+@keyframes typewriter {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 16ch; /* "Start Your Journey" has 18 characters */
+  }
 }
 
+@keyframes blink {
+  0%, 100% {
+    border-color: #fed42a;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
 
-
-
-
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fed42a;
+  width: 0ch;
+  animation:
+    typewriter 3s steps(10) forwards,
+    blink 0.5s step-end infinite;
+}
