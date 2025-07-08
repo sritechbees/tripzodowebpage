@@ -7,10 +7,10 @@ import {
   FaWhatsapp,
   FaMapMarkerAlt,
   FaShieldAlt,
-  FaWifi,
-  FaSun,
-  FaBiking,
-  FaSwimmer,
+  FaBusAlt,
+  FaUserTie,
+  FaHeadset,
+  FaHotel,
   FaDumbbell,
   FaSpa,
 } from "react-icons/fa";
@@ -76,30 +76,30 @@ const data = [
 ];
 
 const facilities = [
-  {
+ {
     title: "Best Security",
-    description: "24/7 monitored surveillance to ensure your safety.",
+    description: "Round-the-clock security and surveillance for a safe journey.",
     icon: <FaShieldAlt className="text-orange-500 text-3xl" />,
   },
   {
-    title: "Free Internet",
-    description: "High-speed Wi-Fi available across all areas.",
-    icon: <FaWifi className="text-blue-500 text-3xl" />,
+    title: "Clean & AC Transport",
+    description: "Hygienic, fully air-conditioned vehicles for maximum comfort.",
+    icon: <FaBusAlt className="text-blue-500 text-3xl" />,
   },
   {
-    title: "Solar Energy",
-    description: "Eco-friendly solar-powered infrastructure.",
-    icon: <FaSun className="text-yellow-500 text-3xl" />,
+    title: "Professional Tour Guide",
+    description: "Knowledgeable guides to enhance your travel experience.",
+    icon: <FaUserTie className="text-green-600 text-3xl" />,
   },
   {
-    title: "Mountain Biking",
-    description: "Thrilling trails designed for adventurous rides.",
-    icon: <FaBiking className="text-green-600 text-3xl" />,
+    title: "24/7 Customer Support",
+    description: "Our team is always available to assist you, anytime.",
+    icon: <FaHeadset className="text-purple-500 text-3xl" />,
   },
   {
-    title: "Swimming & Fishing",
-    description: "Relax in serene waters and enjoy recreational fishing.",
-    icon: <FaSwimmer className="text-cyan-500 text-3xl" />,
+    title: "Qualified Accommodations",
+    description: "Verified, high-quality stays for your comfort and safety.",
+    icon: <FaHotel className="text-yellow-500 text-3xl" />,
   },
   {
     title: "GYM and Yoga",
