@@ -112,7 +112,7 @@ const Booknow = () => {
               data-aos="fade-down"
               className="text-[#fed42a] text-4xl md:text-6xl font-extrabold"
             >
-              Start Your Journey
+              Contact
             </motion.h1>
           </div>
         </div>

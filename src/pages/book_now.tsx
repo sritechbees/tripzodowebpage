@@ -104,11 +104,14 @@ const Booknow = () => {
   className="relative h-[60vh] bg-center bg-cover mt-16"
   style={{ backgroundImage: "url('/contact/book now.jpg')" }}
 >
-  <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
-    <h1 className="typewriter text-[#fed42a] text-4xl md:text-6xl font-extrabold drop-shadow-[0_5px_10px_rgba(255,255,255,0.5)]">
-      Start Your Journey
-    </h1>
-  </div>
+
+
+  <div className="absolute inset-0 bg-black/30 flex items-center justify-center px-4 text-center">
+  <h1 className="typewriter text-[#fed42a] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold drop-shadow-[0_5px_10px_rgba(255,255,255,0.5)] leading-snug sm:leading-tight">
+    Start Your Journey
+  </h1>
+</div>
+
 </div>
 
         </div>
