@@ -80,7 +80,7 @@ body {
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #fed42a;
+  border-right: 2px #fed42a;
   width: 0ch;
   animation:
     typewriter 3s steps(10) forwards,
