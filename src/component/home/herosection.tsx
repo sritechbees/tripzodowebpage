@@ -132,7 +132,7 @@ const HeroSection = () => {
             Explore Destinations
           </Link>
           <Link
-            href="/contact"
+            href="/book_now"
             className="border-2 border-white px-6 py-3 rounded-xl text-white hover:bg-white hover:text-black transition duration-300"
           >
             Book a Tour

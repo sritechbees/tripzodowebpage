@@ -18,7 +18,7 @@ const WelcomeHolidays = () => {
       <div className="absolute inset-0 flex justify-center z-0">
         <div className="relative w-full max-w-7xl h-full">
           <Image
-            src="/home/welcome.jpg"
+            src="/tripzodo/welcome.jpeg"
             alt="Holiday Background"
             layout="fill"
             objectFit="cover"
@@ -38,19 +38,10 @@ const WelcomeHolidays = () => {
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          Welcome to Holidays
+         <span className="text-white"> Welcome to</span> tripzodo.com
         </h1>
 
-        <p
-          className="text-lg md:text-lg text-white"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          Discover the best travel experiences with{" "}
-          <span className="font-semibold text-white">Tripzodo</span>. Your
-          journey to beautiful destinations begins here. Let&apos;s explore the
-          world together!
-        </p>
+    
 
         <Link
           href="/group/grouptour_herosection"

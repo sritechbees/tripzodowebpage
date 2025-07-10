@@ -9,7 +9,7 @@ import Link from 'next/link';
 const packages = [
   {
     title: 'Maldives Escape',
-    image: '/home/popular1.jpg',
+    image: '/tripzodo/Maldives.jpeg',
     location: 'Maldives',
     description: 'Relax in the turquoise waters of the Maldives with luxurious beach villas.',
   },
@@ -21,7 +21,7 @@ const packages = [
   },
   {
     title: 'Bali Bliss',
-    image: '/home/Bali Bliss.jpg',
+    image: '/tripzodo/bali.jpeg',
     location: 'Indonesia',
     description: 'Enjoy tropical beaches, rice terraces, and a peaceful island lifestyle.',
   },
@@ -39,7 +39,7 @@ const packages = [
   },
   {
     title: 'Island Thailand',
-    image: '/home/Island Thailand.jpg',
+    image: '/tripzodo/thailand1.jpeg',
     location: 'Thailand',
     description: 'Unwind on serene beaches and explore vibrant local markets.',
   },

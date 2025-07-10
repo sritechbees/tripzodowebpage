@@ -101,22 +101,45 @@ const Booknow = () => {
       <div className="bg-white text-gray-800">
         {/* Hero Section */}
         <div
-          className="relative h-[60vh] bg-center bg-cover mt-16"
-          style={{ backgroundImage: "url('/contact/contact.jpg')" }}
-        >
-          <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              data-aos="fade-down"
-              className="text-[#fed42a] text-4xl md:text-6xl font-extrabold"
-            >
-              Contact
-            </motion.h1>
-          </div>
-        </div>
+      className="relative h-[90vh] bg-center bg-cover mt-16 flex items-center justify-center px-4 md:px-10"
+      style={{ backgroundImage: "url('/tripzodo/contact3.jpeg')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-opacity-40"></div>
 
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        
+        {/* Left - Contact */}
+        <motion.h1
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          data-aos="fade-right"
+          className="text-[#fed42a] text-4xl md:text-6xl font-extrabold flex ml-32"
+        >
+          Contact
+        </motion.h1>
+
+        {/* Center - Image */}
+       
+
+        {/* Right - Us */}
+        <motion.h1
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          data-aos="fade-left"
+          className="text-[#fed42a] text-4xl md:text-6xl font-extrabold flex mr-32
+          "
+        >
+          Us
+        </motion.h1>
+
+      </div>
+    </div>
+
+      
         {/* Success/Error Messages */}
         {successMsg && (
           <motion.div

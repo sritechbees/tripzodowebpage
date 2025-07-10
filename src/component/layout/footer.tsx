@@ -21,6 +21,29 @@ const fadeInUp = {
     transition: { delay: i * 0.2, duration: 0.6 },
   }),
 };
+const socialLinks = [
+  {
+    Icon: FaTwitter,
+    href: "https://twitter.com/yourprofile",
+    label: "Twitter",
+  },
+  {
+    Icon: FaFacebookF,
+    href: "https://facebook.com/yourprofile",
+    label: "Facebook",
+  },
+  {
+    Icon: FaInstagram,
+    href: "https://www.instagram.com/tripzodo/",
+    label: "Instagram",
+  },
+  {
+    Icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A104389413&keywords=tripzodo.com&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a5adb91d-42b0-451c-862c-9f1884b79d96&sid=cW2&spellCorrectionEnabled=false",
+    label: "LinkedIn",
+  },
+];
+
 
 const Footer = () => {
   return (
@@ -92,21 +115,24 @@ const Footer = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-xl text-[#fed42a] font-bold mb-4">Tripzodo</h2>
+          <h2 className="text-xl text-[#fed42a] font-bold mb-4">tripzodo.com</h2>
           <p className="text-sm text-white mb-4">
             &quot; Turning your travel dreams into unforgettable journeys.&quot;
           </p>
-          <div className="flex space-x-3">
-            {[FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, idx) => (
-              <a
-                key={idx}
-                href="#"
-                className="bg-gray-800 hover:text-[#fed42a] p-2 rounded-full hover:bg-gray-700 transition duration-300"
-              >
-                <Icon />
-              </a>
-            ))}
-          </div>
+        <div className="flex space-x-3">
+      {socialLinks.map(({ Icon, href, label }, idx) => (
+        <a
+          key={idx}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={label}
+          className="bg-gray-800 hover:text-[#fed42a] p-2 rounded-full hover:bg-gray-700 transition duration-300"
+        >
+          <Icon size={20} />
+        </a>
+      ))}
+    </div>
         </motion.div>
 
 
